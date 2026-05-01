@@ -2,37 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>KnowYourCyber | Secure Your Digital Life</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- 
   <div class="bg-gif"></div>
 
   <nav class="glass-nav">
-    <ul class="nav-links">
-      <li><a href="index.html" class="scramble" data-text="HOME">HOME</a></li>
-      <li><a href="database.html" class="scramble" data-text="DATABASE">DATABASE</a></li>
-      <li><a href="mission.html" class="scramble" data-text="MISSION">MISSION</a></li>
-    </ul>
+    <div class="nav-container">
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="scramble" data-text="HOME">HOME</a></li>
+        <li><a href="database.html" class="scramble" data-text="DATABASE">DATABASE</a></li>
+        <li><a href="mission.html" class="scramble" data-text="MISSION">MISSION</a></li>
+      </ul>
+    </div>
   </nav>
 
   <section class="hero">
     <div class="overlay"></div>
-    
     <div class="hero-gif-container">
       <img src="Code.gif" alt="Cyber Security Animation" class="hero-gif">
     </div>
-    
     <div class="hero-content">
-      <h1 id="logo">KNOWYOURCYBER</h1>
-      <p id="subtitle">Secure Your Digital Life</p>
+      <div class="logo-wrapper" id="logoWrapper">
+        <h1 id="logo">KNOWYOURCYBER</h1>
+        <p id="subtitle">Secure Your Digital Life</p>
+      </div>
     </div>
   </section>
 
-  
   <section class="about-new">
     <div class="about-container">
       <div class="about-icon">
@@ -43,13 +44,10 @@
           <path d="M12 12V22" stroke="#ff6a00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      
       <h2 class="about-title">Protect Yourself Against Cyber-Attacks</h2>
-      
       <p class="about-description">
         KnowYourCyber helps individuals protect themselves against cyber-attacks by providing a database of cyber threats and guidance on how to react in an emergency.
       </p>
-      
       <div class="about-features">
         <div class="feature">
           <span class="feature-check">✓</span>
@@ -64,7 +62,6 @@
           <span>Free for everyone</span>
         </div>
       </div>
-      
       <button class="about-button">LEARN MORE →</button>
     </div>
   </section>

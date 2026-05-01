@@ -1,0 +1,205 @@
+.mission-main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 120px 2rem 4rem;
+  min-height: 100vh;
+}
+
+.mission-header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.mission-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #fff, #ffaa66);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mission-header p {
+  color: #aaa;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.mission-statement-block {
+  background: rgba(138, 34, 8, 0.15);
+  border-radius: 32px;
+  padding: 2.5rem;
+  margin: 2rem 0;
+  text-align: center;
+  border: 1px solid #8a2208;
+}
+
+.mission-quote-icon {
+  font-size: 2rem;
+  color: #ff6a00;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.mission-statement {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.value-card {
+  background: rgba(10, 10, 15, 0.7);
+  border-radius: 28px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(138, 34, 8, 0.4);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff6a00;
+  box-shadow: 0 20px 30px -12px rgba(138, 34, 8, 0.3);
+}
+
+.value-card h3 {
+  font-size: 1.3rem;
+  color: #ffaa66;
+  margin-bottom: 0.75rem;
+}
+
+.value-card p {
+  font-size: 0.85rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.impact-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+}
+
+.impact-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffaa66;
+  margin-bottom: 2rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.impact-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6a00;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.impact-label {
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.how-it-works {
+  margin: 3rem 0;
+}
+
+.how-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffaa66;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1rem;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6a00;
+  margin-bottom: 0.5rem;
+}
+
+.step h4 {
+  font-size: 1.1rem;
+  color: #ffaa66;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-size: 0.85rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.mission-footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #8a220840;
+  font-size: 0.7rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .mission-main {
+    padding: 100px 1rem 3rem;
+  }
+  
+  .mission-header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .mission-statement {
+    font-size: 0.95rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .value-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .impact-number {
+    font-size: 1.5rem;
+  }
+}

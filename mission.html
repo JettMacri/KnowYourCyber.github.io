@@ -1,28 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mission</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>KnowYourCyber | Mission</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mission.css">
 </head>
 <body>
 
-<nav class="glass-nav">
-  <ul class="nav-links">
-    <li><a href="index.html" class="scramble" data-text="HOME">HOME</a></li>
-    <li><a href="database.html" class="scramble" data-text="DATABASE">DATABASE</a></li>
-    <li><a href="mission.html" class="scramble" data-text="MISSION">MISSION</a></li>
-  </ul>
-</nav>
+  <div class="bg-gif"></div>
 
-<section class="about">
-  <h1>OUR MISSION</h1>
-  <p>
-    KnowYourCyber helps individuals understand cyber threats and protect themselves.
-    We simplify data breaches and give you control over your digital life.
-  </p>
-</section>
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="scramble" data-text="HOME">HOME</a></li>
+        <li><a href="database.html" class="scramble" data-text="DATABASE">DATABASE</a></li>
+        <li><a href="mission.html" class="scramble" data-text="MISSION">MISSION</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <main class="mission-main">
+    <div class="mission-header">
+      <h1>OUR MISSION</h1>
+      <p>Protecting the Public Through Education & Action</p>
+    </div>
+
+    <div class="mission-statement-block">
+      <div class="mission-quote-icon">⛊</div>
+      <p class="mission-statement">
+        KnowYourCyber is a charitable organization dedicated to increasing awareness of digital threats. 
+        We help you react to emergencies and secure your data through transparent, accessible tools.
+      </p>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <h3>Transparency</h3>
+        <p>Open-source methodology, no hidden agendas. Every data source is verified and documented.</p>
+      </div>
+      <div class="value-card">
+        <h3>Free Access</h3>
+        <p>Security is a human right. No paywalls, no premium tiers — ever.</p>
+      </div>
+      <div class="value-card">
+        <h3>Actionable Intel</h3>
+        <p>We don't just show you the problem. We give you clear, immediate steps to protect yourself.</p>
+      </div>
+    </div>
+
+    <div class="impact-section">
+      <h2 class="impact-title">OUR IMPACT</h2>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <div class="impact-number">500K+</div>
+          <div class="impact-label">Users Protected</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-number">100+</div>
+          <div class="impact-label">Breaches Tracked</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-number">50+</div>
+          <div class="impact-label">Partnerships</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-number">24/7</div>
+          <div class="impact-label">Emergency Response</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-it-works">
+      <h2 class="how-title">HOW WE HELP</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h4>Scan Breaches</h4>
+          <p>We aggregate data from public leaks and dark web sources.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h4>Analyze & Verify</h4>
+          <p>Our team verifies authenticity before adding to database.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h4>Notify & Guide</h4>
+          <p>We provide actionable steps to secure affected accounts.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mission-footer">
+    <p>© 2025 KnowYourCyber — Non-profit initiative for digital safety.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
