@@ -1,0 +1,94 @@
+{
+  "breaches": [
+    {
+      "email": "j**n.s**th@gmail.com",
+      "site": "LinkedIn",
+      "date": "2021-06-22",
+      "details": "700 million user records leaked including emails and passwords. Change your password immediately and enable 2FA."
+    },
+    {
+      "email": "emm**.joh**on@yahoo.com",
+      "site": "Canva",
+      "date": "2019-05-24",
+      "details": "139 million user accounts exposed: names, usernames, email addresses, and password hashes."
+    },
+    {
+      "email": "mic**el.b**wn@hotmail.com",
+      "site": "Adobe",
+      "date": "2013-10-04",
+      "details": "153 million records breached including IDs, encrypted passwords, and password hints."
+    },
+    {
+      "email": "sa**h.wi**on@gmail.com",
+      "site": "Dropbox",
+      "date": "2012-07-12",
+      "details": "68 million user emails and hashed passwords leaked. Enable two-factor authentication."
+    },
+    {
+      "email": "da**d.l**@outlook.com",
+      "site": "MyFitnessPal",
+      "date": "2018-03-25",
+      "details": "150 million accounts affected: usernames, emails, and IP addresses."
+    },
+    {
+      "email": "an**.ma**ez@gmail.com",
+      "site": "Twitter",
+      "date": "2022-11-23",
+      "details": "5.4 million user data scraped via API vulnerability. Emails and phone numbers exposed."
+    },
+    {
+      "email": "ja**.wi**on@yahoo.com",
+      "site": "Facebook",
+      "date": "2019-09-28",
+      "details": "530 million users affected. Phone numbers and emails were exposed."
+    },
+    {
+      "email": "li**.an**son@gmail.com",
+      "site": "Marriott",
+      "date": "2018-11-30",
+      "details": "500 million guests affected. Personal information including passport numbers exposed."
+    },
+    {
+      "email": "ro**.ta**or@hotmail.com",
+      "site": "Equifax",
+      "date": "2017-09-07",
+      "details": "147 million consumers affected. Social Security numbers and driver's licenses exposed."
+    },
+    {
+      "email": "ma**.ga**ia@gmail.com",
+      "site": "Yahoo",
+      "date": "2016-09-22",
+      "details": "3 billion accounts affected. Names, emails, and hashed passwords exposed."
+    },
+    {
+      "email": "al**.wo**er@icloud.com",
+      "site": "Wattpad",
+      "date": "2020-07-14",
+      "details": "270 million users affected. Usernames and passwords were leaked."
+    },
+    {
+      "email": "bo**.ma**ey@hotmail.com",
+      "site": "Last.fm",
+      "date": "2016-08-22",
+      "details": "43 million users affected. Email addresses and passwords exposed."
+    },
+    {
+      "email": "ch**.br**n@gmail.com",
+      "site": "Snapchat",
+      "date": "2014-01-01",
+      "details": "4.6 million users affected. Phone numbers and usernames exposed."
+    },
+    {
+      "email": "di**.pr**ce@outlook.com",
+      "site": "Ticketmaster",
+      "date": "2018-04-12",
+      "details": "40,000 UK customers affected. Payment information may have been compromised."
+    },
+    {
+      "email": "ed**.no**on@yahoo.com",
+      "site": "Uber",
+      "date": "2022-12-15",
+      "details": "57 million users affected. Driver account information exposed."
+    }
+  ]
+}

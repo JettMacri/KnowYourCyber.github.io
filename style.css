@@ -37,7 +37,7 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
   z-index: 1;
   pointer-events: none;
   overflow: hidden;
@@ -156,7 +156,7 @@ body {
 }
 
 .hero {
-  height: 120vh;
+  height: 100vh;
   background: url("giphy-3327534833.gif") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -180,7 +180,7 @@ body {
   text-align: center;
   z-index: 2000;
   pointer-events: none;
-  transition: all 0.6s cubic-bezier(0.3, 0.8, 0.4, 1);
+  transition: all 0.5s cubic-bezier(0.3, 0.8, 0.4, 1);
 }
 
 .logo-wrapper.scrolled {
@@ -191,39 +191,117 @@ body {
 }
 
 #logo {
-  font-size: 20rem;
+  font-size: 5rem;
   font-weight: 900;
   letter-spacing: normal;
   color: #ff6a00;
-  text-shadow: 0 0 35px #000000, 0 0 70px rgba(255, 106, 0, 0.8);
-  transition: all 0.6s cubic-bezier(0.3, 0.8, 0.4, 1);
+  text-shadow: 0 0 20px #000000, 0 0 40px rgba(255, 106, 0, 0.6);
+  transition: all 0.5s cubic-bezier(0.3, 0.8, 0.4, 1);
   white-space: nowrap;
 }
 
 .logo-wrapper.scrolled #logo {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px #ff6a00;
-}
-
-#subtitle {
-  color: #aaa;
-  font-size: 1.2rem;
-  margin-top: 15px;
-  transition: all 0.4s ease;
-  opacity: 1;
-}
-
-.logo-wrapper.scrolled #subtitle {
-  opacity: 0;
-  visibility: hidden;
-  display: none;
+  text-shadow: 0 0 8px #ff6a00;
 }
 
 .hero-content {
   position: relative;
   text-align: center;
   z-index: 2;
+}
+
+.journey-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, rgba(5,5,5,0.95), rgba(10,10,15,0.98));
+}
+
+.journey-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+}
+
+.thread-line {
+  position: relative;
+  width: 3px;
+  height: auto;
+  min-height: 500px;
+  background: linear-gradient(180deg, rgba(255,106,0,0.2), rgba(255,106,0,0.6), rgba(255,106,0,0.2));
+  border-radius: 3px;
+  margin-top: 60px;
+  flex-shrink: 0;
+}
+
+.thread-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  pointer-events: none;
+}
+
+.thread-glow {
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 15px;
+  height: 15px;
+  background: #ff6a00;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #ff6a00, 0 0 40px rgba(255,106,0,0.8);
+  transition: top 0.08s linear;
+}
+
+.journey-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.journey-card {
+  background: rgba(15, 15, 25, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 35px;
+  border: 1px solid rgba(255, 106, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.journey-card.active {
+  border-color: #ff6a00;
+  background: rgba(20, 20, 35, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(255, 106, 0, 0.3);
+}
+
+.card-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ff6a00, #ffaa66);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 15px;
+}
+
+.journey-card h3 {
+  font-size: 1.6rem;
+  color: #ffaa66;
+  margin-bottom: 12px;
+}
+
+.journey-card p {
+  color: #c0c0c0;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .about-new {
@@ -244,23 +322,6 @@ body {
   border: 1px solid rgba(255, 106, 0, 0.3);
   box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
-  animation: fadeInUp 0.8s ease-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.about-container:hover {
-  border-color: rgba(255, 106, 0, 0.8);
-  box-shadow: 0 0 30px rgba(255, 106, 0, 0.2);
 }
 
 .about-icon {
@@ -281,7 +342,6 @@ body {
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 20px;
-  letter-spacing: -0.5px;
   background: linear-gradient(135deg, #ffffff, #ffaa66);
   -webkit-background-clip: text;
   background-clip: text;
@@ -349,26 +409,6 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
-}
-
-.about-button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background: rgba(255, 106, 0, 0.3);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.5s ease, height 0.5s ease;
-}
-
-.about-button:hover::before {
-  width: 300px;
-  height: 300px;
 }
 
 .about-button:hover {
@@ -378,25 +418,24 @@ body {
   transform: scale(1.02);
 }
 
-.glow-text-line {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  word-spacing: 5px;
-  color: #c0c0c0;
-  margin-bottom: 32px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.theme-btn {
+  background: transparent;
+  border: 1px solid #ff6a00;
+  border-radius: 40px;
+  padding: 5px 12px;
+  cursor: pointer;
+  color: #ffaa66;
+  margin-left: 15px;
 }
 
-.glow-text-line span {
-  display: inline-block;
-  transition: text-shadow 1s ease, color 1s ease;
+body.light-mode {
+  background: #f5f5f5;
+  color: #1a1a1a;
 }
 
-.glow-text-line span.highlight {
-  color: #ffffff;
-  text-shadow: 0 0 8px #000000, 0 0 15px rgb(112, 112, 112);
+body.light-mode .glass-nav {
+  background: rgba(255,255,255,0.9);
+  color: #1a1a1a;
 }
 
 @media (max-width: 768px) {
@@ -411,7 +450,7 @@ body {
     left: 15px;
     transform: none;
   }
-  
+
   .nav-container {
     justify-content: flex-start;
   }
@@ -421,35 +460,23 @@ body {
     position: static;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
-    border: 1px solid #ff6a00;
-    color: #ff6a00;
-    font-size: 1.5rem;
     padding: 8px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    z-index: 1001;
   }
   
   .nav-links {
     position: fixed;
     top: 60px;
     left: 15px;
-    right: auto;
     width: 200px;
     background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(20px);
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
-    transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
     border-radius: 16px;
     padding: 1rem;
-    margin: 0;
-    z-index: 1000; 
+    transition: all 0.3s ease;
   }
   
   .nav-links.active {
@@ -458,141 +485,64 @@ body {
     transform: translateY(0);
   }
   
-  .nav-links li {
-    flex: none;
-    width: 100%;
-    text-align: center;
+  .journey-container {
+    flex-direction: column;
+    gap: 40px;
   }
   
-  .nav-links a {
-    font-size: 1rem;
-    display: block;
-    padding: 10px;
-  }
-  
-  .logo-wrapper {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-  }
-  
-  .logo-wrapper.scrolled {
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-  }
-  
-  .logo-wrapper.scrolled #logo {
-    font-size: 1.2rem;
-    white-space: nowrap;
-  }
-  
-  #logo {
-    font-size: 1.5rem;
-    white-space: nowrap;
-  }
-  
-  #subtitle {
+  .thread-line {
     display: none;
   }
   
-  .about-container {
-    padding: 25px 15px;
+  .journey-card {
+    padding: 25px;
   }
   
-  .about-title {
+  .journey-card h3 {
     font-size: 1.3rem;
   }
   
+  .card-number {
+    font-size: 2rem;
+  }
+  
+  .about-container {
+    padding: 25px 20px;
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
+  }
+  
   .about-description {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   
   .about-features {
-    gap: 10px;
+    gap: 12px;
     flex-direction: column;
     align-items: center;
   }
   
-  .feature {
-    font-size: 0.8rem;
-    width: 100%;
-    justify-content: center;
+  #logo {
+    font-size: 1.8rem;
   }
   
-  .about-button {
-    padding: 8px 20px;
-    font-size: 0.75rem;
-  }
-  
-  .glow-text-line {
-    font-size: 0.9rem;
+  .hero {
+    height: 100vh;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .glass-nav {
     width: 85%;
-    padding: 12px 25px;
-  }
-  
-  .nav-links {
-    gap: 1.5rem;
   }
   
   #logo {
     font-size: 3rem;
   }
   
-  .logo-wrapper.scrolled #logo {
-    font-size: 1.2rem;
-  }
-  
-  .about-container {
-    max-width: 85%;
-    padding: 40px 30px;
-  }
-  
-  .about-title {
-    font-size: 1.9rem;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .glass-nav {
-    max-width: 950px;
-  }
-  
-  #logo {
-    font-size: 3.5rem;
-  }
-  
-  .about-container {
-    max-width: 800px;
-  }
-}
-
-@media (min-width: 1441px) {
-  .glass-nav {
-    max-width: 1200px;
-  }
-  
-  #logo {
-    font-size: 5rem;
-  }
-  
-  .about-container {
-    max-width: 1000px;
-  }
-  
-  .about-title {
-    font-size: 2.5rem;
-  }
-  
-  .about-description {
-    font-size: 1.2rem;
+  .journey-card h3 {
+    font-size: 1.4rem;
   }
 }
